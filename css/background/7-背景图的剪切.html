@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图的剪切</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 20px dotted black;
+        }
+        .box1{
+            background-clip: border-box;
+            /* 背景被裁剪到边框 */
+            background-color: aqua;
+        }
+        .box2{
+            background-clip: padding-box;
+            /* 背景被裁剪到内边距框 */
+            background-color: aqua;
+        }
+        .box3{
+            background-clip: content-box;
+            /* 背景被裁剪到内容框 */
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <p>锄禾日当午，汗滴禾下土，谁知盘中餐，粒粒皆辛苦</p>
+        <p>锄禾日当午，汗滴禾下土，谁知盘中餐，粒粒皆辛苦</p>
+        
+        
+    </div>
+    <div class="box box2">
+        <p>锄禾日当午，汗滴禾下土，谁知盘中餐，粒粒皆辛苦</p>
+        <p>锄禾日当午，汗滴禾下土，谁知盘中餐，粒粒皆辛苦</p>
+        
+        
+    </div>
+    <div class="box box3">
+        <p>锄禾日当午，汗滴禾下土，谁知盘中餐，粒粒皆辛苦</p>
+        <p>锄禾日当午，汗滴禾下土，谁知盘中餐，粒粒皆辛苦</p>
+        
+        
+    </div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+</body>
+</html>
