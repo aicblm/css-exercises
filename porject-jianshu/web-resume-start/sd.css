@@ -1,0 +1,271 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 2;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+li{
+    list-style: none;
+}
+
+/* 全局 */
+:root{
+  /* 颜色变量 */
+  --primary-color:#00a78e;
+  --secondary-color:#f7f7f7;
+  --fuzhu:#646f87;
+  --white:#fff;
+  --black:#000;
+  --black-300:#333;
+  --black-alpha-100:0 0 0 0 rgba(0,0,0,.5);
+  /*尺寸变量*/
+  --padding0:0px;
+  --padding10:10px;
+  --padding80:80px;
+  /*字号变量*/
+  --xx-large-font:3rem;
+  --x-large-font:2rem;
+  --large-font:1.5rem;
+  --normal-font:1rem;
+  --small-font:0.875rem;
+}
+main{
+    background-color: aquamarine;
+}
+footer{
+    background-color: beige;
+}
+footer .con{
+    padding: 0;
+}
+.con{
+    width: 1140px;
+    margin: 0px auto;
+    padding: 50px 0;
+}
+.primary{
+  background-color: var(--primary-color);
+  color:var(--white);
+}
+.secondary{
+  background-color: var(--black-300);
+  color: var(--white);
+}
+.odd{
+    background-color: var(--secondary-color);
+    min-height: 500px;
+}
+.even{
+    background-color: var(--white);
+    min-height: 500px;
+}
+.flex{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.center{
+  text-align: center;
+}
+.section-title span{
+  color: var(--fuzhu);
+}
+.main-title{
+  font-size: var(--x-large-font);
+  color: var(--primary-color);
+}
+.sub-title{
+  font-size: var(--small-font);
+  color: var(--fuzhu);
+}
+.section{
+  padding: 80px 0;
+  min-height: 600px;
+}
+.flexbasis50{
+  flex-basis: 50%;
+  border: 1px solid red;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+#section1 .col:nth-child(1){
+  /* background-color: red; */
+  flex-basis: 50%;
+  height: 60px;
+  line-height: 60px;
+}
+#section1 .col:nth-child(2){
+  /* background-color: red; */
+  flex-basis: 50%;
+}
+#section1 img{
+  width: 400px;
+}
+#section2 img{
+  width: 400px;
+}
+
+
+
+/* header */
+header{
+    /* background-color: var(--primary-color); */
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    /* width: 100px; */
+    height: 80px;
+    padding: 10px 0;
+    line-height: 50px;
+    z-index: 9999;
+}
+
+header.col{
+  background-color: #00a78e;
+}
+header .logo{
+  /* background-color: aqua; */
+  height: 60px;
+  line-height: 60px;
+  flex-grow: 4;
+}
+header .col{
+  /* background-color: blueviolet; */
+  flex-grow: 6;
+}
+header .col nav{
+  float:right;
+}
+header .col nav a{
+  margin-right: 50px;
+}
+header .col nav a:nth-child(6){
+  margin-right: 0px;
+  /* background-color: #fff; */
+}
+/* 
+1.定位是什么
+-定位是一种布局模型。
+-定位是一种精确控制元素位置的布局模型。
+2.定位任何实现
+如果你希望精确控制一个图片的位置，那么你需要两步骤：
+第一步：为图片添加定位属性（position：relative|absolute|fixed）
+    - relative：设置相对定位（核心：搞清参照物|原位置）
+    - absolute：设置绝对定位（核心：搞清参照物|视口或父级元素被定义为定位，就参照父级元素）
+    - fixed：设置固定定位（核心：搞清参照物|）
+第二步：为图片添加定位坐标属性
+*/
+header .con{
+    padding: 0;
+}
+
+
+
+
+/* 登录区 */
+h4{
+  color: rgb(3, 164, 111);
+}
+button{
+  border: 0;
+  border-radius: 30px;
+  width: 140px;
+  height: 70px;
+  color: #fff;
+  background-color: rgb(3, 164, 111);
+}
+
+
+
+#section1 img{
+  width: 400px;
+}
+.koo{
+  z-index: 9;
+  /* margin-bottom: 100px; */
+}
+
+/* #section1{
+  margin-top: -50px;
+} */
+.landing-bg{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #00a78e;
+  width: 50%;
+  height: 100%;
+  z-index: 0;
+}
