@@ -17,6 +17,7 @@
             background-image: url('./img/2.jpg');
             background-repeat: no-repeat;
             background-size: 240px 240px;
+            /* background-size: 240px auto; *//*auto:按原始比例自动调节（在这里原始值已经被改了）*/
         }
         .box2{
             background-image: url('./img/2.jpg');
@@ -26,10 +27,21 @@
         .box3{
             background-image: url('./img/2.jpg');
             background-repeat: no-repeat;
-            background-size: cover;
-            background-size: contain;
-            /* cover：保证图片的原宽高比，并保证一定会覆盖整个背景，如果背景和图片的宽高比不一致那么会导致图片显示不完整。 */
-            /* contain：保证图片的宽高比不会被改变 */
+            width: 600px;
+            background-size: cover;/*图片必须覆盖整个元素，图片的局部可能无法显示*/
+            /* 官方：cover：保证图片的原宽高比，并保证一定会覆盖整个背景，如果背景和图片的宽高比不一致那么会导致图片显示不完整。 */
+        }
+        .box4{
+            background-image: url('./img/2.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;/*元素必须包含整个图片，元素的局部可能会出现空白*/
+            /* 官方：contain：保证图片的宽高比不会被改变 */
+        }
+
+        .box5{
+            background-image: url('./img/2.jpg');
+            background-repeat: no-repeat;
+            background-size: auto;/*根据图片原始宽高及比例计算背景图尺寸*/
         }
     </style>
 </head>
