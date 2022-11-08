@@ -10,15 +10,130 @@
             width: 200px;
             height: 200px;
             padding: 20px;
-            border: 20px dotted black;
+            border: 2px solid black;
+            /* background-repeat: no-repeat; */
         }
+        .linear1{
+            background-image: linear-gradient(0deg,red 0px 60px, yellow 60px 120px,#0f0 120px 180px,#00f 180px 200px);
+        }
+        .linear2{
+            background-image: linear-gradient(90deg,#00f 0px 80px ,#fff 80px 160px,#f00 160px 200px);
+        }
+        .linear3{
+            background-image: linear-gradient(
+                45deg,
+                #000 25%, 
+                transparent 25%,
+                transparent 75%,
+                #000 75%
+                ),linear-gradient(
+                -45deg,
+                #000 25%, 
+                transparent 25%,
+                transparent 75%,
+                #000 75%
+                );
+            background-size:  40px 40px;
+            
+        }
+        .linear5{
+            background-image: linear-gradient(
+                90deg,
+                #00f 30%,
+                #fff 30%,
+                #fff 70%,
+                red 70%,
+                red
+                 );
+        }
+        .radial1{
+            background-image: radial-gradient(
+
+                yellow,
+                red
+                
+            );
+        }
+        .radial2{
+            width: 400px;
+            background-image: radial-gradient(
+                circle at top right,
+                yellow,
+                red
+                
+            );
+        }
+        .radial3{
+            width: 400px;
+            background-image: radial-gradient(
+                closest-side,
+                yellow,
+                red
+                
+            );
+        }
+        .conic1{
+            background-image: conic-gradient(
+            red,
+            yellow
+            );
+        }
+        .conic2{
+            background-image: conic-gradient(
+            from 45deg,
+            red,
+            yellow
+            );
+        }
+        .conic3{
+            background-image: conic-gradient(
+            at 90px 90px ,
+            red,
+            yellow
+            );
+        }
+        .conic4{
+            background-image: conic-gradient(
+            at 30% 80%,
+            red,
+            yellow
+            );
+        }
+        .conic1{}
     </style>
 </head>
 <body>
-    <div class="box box1"></div>
-    <div class="box box2"></div>
-    <div class="box box3"></div>
-    <div class="box box4"></div>
-    <div class="box box5"></div>
+    <h2>线性渐变：background-image: linear-gradient(渐变角度(0deg),颜色列表(red , yellow));</h2>
+    <div class="box linear1"></div>
+    <div class="box linear2"></div>
+    <div class="box linear3"></div>
+    <div class="box linear4"></div>
+    <div class="box linear5"></div>
+    <h2>径向渐变：radial-gradient([渐变形状(circle,ellipse 两个值) || 渐变大小closest-side] at 渐变位置,颜色列表(red , yellow))</h2>
+    <div class="box radial1"></div>
+    <div class="box radial2"></div>
+    <div class="box radial3"></div>
+    <div class="box radial4"></div>
+    <h2>角度渐变：conic-gradient(角度(from),颜色列表)</h2>
+    <h2>角度渐变：conic-gradient(位置(at),颜色列表)</h2>
+    <div class="box conic1"></div>
+    <div class="box conic2"></div>
+    <div class="box conic3"></div>
+    <div class="box conic4"></div>
+    <div class="box conic5"></div>
+    <div class="box conic6"></div>
 </body>
 </html>
+<!-- 
+    渐变
+    指两种颜色之间的过渡
+
+    线性渐变是什么？
+    指两种颜色之间按照直线方式平滑过渡
+
+    径向渐变是什么？
+    指两种颜色之间按照射线方式平滑过渡
+
+    角度渐变是什么？
+    指两种颜色之间按照360度旋转方式平滑过渡
+ -->
