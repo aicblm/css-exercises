@@ -74,6 +74,10 @@ select {
   }
 }
 /* 全局样式 */
+body{
+    font-family: Georgia,'PingFang';
+}
+
 :root {
     /* 颜色变量: */
     --green: #00a78e;
@@ -468,4 +472,25 @@ header .logo span{
 }
 #portfolio .projects li:hover{
     background-color: var(--white);
+}
+/*********联系方式**********/
+#contact ul{
+    text-align: center;
+}
+#contact ul li{
+    margin: 20px auto;
+}
+#contact ul li i{
+    font-size: 40px;
+}
+
+/**********页尾***********/
+footer{
+    background-color: var(--green);
+    height: 200px;
+    line-height: 200px;
+}
+.box i{
+    font-size: 60px;
+    
 }
