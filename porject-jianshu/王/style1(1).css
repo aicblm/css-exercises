@@ -490,7 +490,11 @@ footer{
     height: 200px;
     line-height: 200px;
 }
-.box i{
-    font-size: 60px;
-    
+.back-to-top i{
+    display: block;
+    position: relative;
+    margin-top: -140px;
+    margin-right: -1200px;
+    font-size: 40px;
+    /* background-color: aqua; */
 }

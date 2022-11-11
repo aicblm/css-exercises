@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .flex{
+            border: 5px solid red;
+            display: flex;
+            height: 500px;
+            /* align-items: stretch; */
+            /*默认值，默认拉伸子元素的高度*/
+
+            /* align-items: flex-start; */
+            /*让弹性项目对齐到垂直轴起点。*/
+
+            /* align-items: flex-end; */
+            /*让弹性项目对齐到垂直轴终点。*/
+
+            align-items: center;
+            /*让弹性项目沿垂直轴居中对齐。*/
+
+            /* align-items:baseline; */
+            /*让弹性项目对齐到弹性项目的基线。*/
+
+        }
+        .box{
+            font-size: 3rem;
+            border: 1px solid #00f;
+        }
+        .box3{
+            height: 100px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+        <div class="box box10">10</div>
+    </div>
+</body>
+
+</html>

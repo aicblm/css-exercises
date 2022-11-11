@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            line-height: 1.5;
+        }
+        .box{
+            background-color: red;
+            width: 600px;
+            height: 200px;
+            margin: 0 auto;/*块元素水平对齐*/
+        }
+        p{
+            background-color: aquamarine;
+            
+        }
+        .box1{
+            margin: 0 auto;/*块元素水平对齐*/
+            text-align: center;/*块元素内容水平对齐*/
+            line-height: 200px;/*块元素内容垂直对齐(在单行文本的时候使用)*/
+        }
+        .box2{
+            height: 58px;
+            padding: 76px 0;
+        }
+        .box2 p{
+            width: 50%;
+            margin: 0 auto;
+        }
+        .box3{
+            height: 72px;
+            /* padding: 76px 0; */
+            padding-top: 128px;
+        }
+        .box3 p{
+            width: 50%;
+            margin: 0 auto;
+        }
+        .box4{
+            text-align: center;
+            height: 70px;
+            padding: 70px 0; 
+        }
+        img{
+            vertical-align: middle;
+        }
+        table{
+            width: 600px;
+            margin: 0 auto;
+        }
+        td{
+            height: 60px;
+            border: 1px solid red;
+            
+        }
+        td:nth-child(1){
+            vertical-align:bottom;
+        }
+        td:nth-child(2){
+            vertical-align:middle;
+        }
+        td:nth-child(3){
+            vertical-align:top;
+        }
+    </style>
+</head>
+<body>
+    文本水平居中对齐|块元素水平居中对齐|单行文本垂直居中对齐
+    <div class="box1 box">
+        <p>hello world!hello world!</p>
+    </div>
+    多行文本垂直居中对齐
+    <div class="box2 box">
+        <p>
+            hello world!hello world!hello world!hello world!
+            hello world!hello world! hello world!hello world!
+        </p>
+    </div>
+    多行文本底部对齐
+    <div class="box3 box">
+        <p>
+            hello world!hello world!hello world!hello world!
+            hello world!hello world! hello world!hello world!
+        </p>
+    </div>
+    图片的水平和垂直居中对齐
+    <div class="box4 box">
+        <img src="./公园.png" alt="">
+    </div>
+    文本基线对齐方式vertical-align
+    <div class="box5 box">
+        
+    </div>
+    td的垂直对齐
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+</body>
+</html>
