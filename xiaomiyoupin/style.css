@@ -2,6 +2,17 @@
     padding: 0;
     margin: 0;
 }
+body{
+    font-family: Georgia,'PingFang';
+}
+
+
+
+
+
+
+
+/*****全局*****/
 .container{
     width: 1200px;
     /* background-color: aqua; */
@@ -9,4 +20,66 @@
 }
 ul{
     list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/******页头******/
+header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #444;
+}
+header .container .row{
+    width: 500px;
+    float: right;
+}
+header .container .row ul{
+    display: flex;
+    justify-content: space-around;
+}
+header .container .row ul li{
+    display: block;
+}
+header .container .row ul li a{
+    color: #ccc;
+}
+header .container .row ul li a:hover{
+    color: #fff;
+}
+.zon{
+    color: #888;
+}
+
+/****焦点****/
+section .container .row:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+}
+section .container .row:nth-child(1) img{
+    width: 200px;
+    height: 50px;
+}
+section .container .row:nth-child(1) .col:nth-child(2) a{
+    font-size: 20px;
+    color: #555;
+}
+section .container .row:nth-child(1) .col:nth-child(2) a:hover{
+    color: rgb(154, 74, 4);
+}
+/* section .container .row:nth-child(1) .col:nth-child(3){
+
+} */
+
+section .container .row:nth-child(2){
+    display: flex;
+}
+section .container .row:nth-child(2) img{
+    width: 1000px;
 }
