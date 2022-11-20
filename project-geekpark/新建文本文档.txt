@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>防极客公园-Geek Things Up!</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- header开始 -->
+        <div id="header">
+            <header class="hide-small">
+                <div class="container">
+                    <div class="row">
+                        <div class="logo">
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                        <nav>
+                            <a href="JavaScript:">资讯</a>
+                            <a href="JavaScript:">活动</a>
+                            <a href="JavaScript:">前沿社</a>
+                        </nav>
+                        <a href="JavaScript:">
+                            <i class="iconfont"></i>
+                        </a>
+                        <a href="JavaScript:">登录</a>
+                    </div>
+                </div>
+            </header>
+            <header class="hide-big">
+                <div class="container">
+                    <a href="JavaScript:">
+                        <i class="iconfont"></i>
+                    </a>
+                    <div class="logo">
+                        <a href="JavaScript:">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <a href="JavaScript:">
+                        <i class="iconfont"></i>
+                    </a>
+                </div>
+            </header>
+        </div>
+        <!-- header结束 -->
+        <!-- main-body开始 -->
+        <div id="main-body">
+            <!-- 二级导航开始 -->
+            <section class="sub-nav">
+                <div class="container">
+                    <div class="row">
+                        <nav>
+                            <a href="JavaScript:">
+                                极客之选
+                                <span>极客之选</span>
+                            </a>
+                            <a href="JavaScript:">
+                                产品观察
+                                <span>产品观察</span>
+                            </a>
+                            <a href="JavaScript:">
+                                极客出行
+                                <span>极客出行</span>
+                            </a>
+                            <a href="JavaScript:">
+                                顶楼TopView
+                                <span>顶楼TopView</span>
+                            </a>
+                            <a href="JavaScript:">
+                                挖App
+                                <span>挖App</span>
+                            </a>
+                            <a href="JavaScript:">
+                                图赏
+                                <span>图赏</span>
+                            </a>
+                            <a href="JavaScript:">
+                                行业资讯
+                                <span>行业资讯</span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <!-- 二级导航结束 -->
+            <!-- 头条开始 -->
+            <section class="toutiao">
+                <div class="container">
+                    <div class="item">
+                        <img src="./images/n4.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- 头条结束 -->
+            <!-- 边栏开始 -->
+            <main class="news-list">
+                <div class="container">
+                    
+                </div>
+            </main>
+            <aside class="sidebar">
+                <div class="container">
+                    
+                </div>
+            </aside>
+        </div>
+        <!-- main-body结束 -->
+        <!-- footer开始 -->
+        <footer>
+
+        </footer>
+        <!-- footer结束 -->
+    </div>
+</body>
+</html>
