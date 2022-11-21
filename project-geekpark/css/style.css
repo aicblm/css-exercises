@@ -199,9 +199,252 @@ p{
     flex-basis: 275px;
 }
 
-/********* #footer **********/
+/********* #footer开始 **********/
 
-/********************/
+#footer, #footer a{
+    color: var(--black-500);
+}
+#footer h4{
+    color: var(--white);
+    margin: 2.4rem 0;
+}
+.social span{
+    color: var(--yellow);
+}
+#footer a:hover{
+    color: var(--white);
+}
+#footer .footer-nav a:hover{
+    color: var(--white);
+}
+#footer .footer-nav [href*="mailto"]{
+    color: var(--primary-color);
+}
+.footer-nav{
+    background-color: var(--black-800);
+    padding: 60px 0 40px 0;
+
+}
+.footer-copyright{
+    background-color: var(--black);
+    height: 55px;
+    line-height: 55px;
+    
+}
+.footer-copyright .flex{
+    justify-content: space-between;
+}
+/* 文字大小 */
+#footer{
+    font-size: 1.4rem;
+}
+#footer a, #footer p{
+    font-size: inherit;
+}
+
+/* 布局 */
+.contact-us{
+    flex: 40%;
+}
+.contact-us p ,#footer .about li, #footer .serve li{
+    margin: 1.4rem 0;
+}
+.footer-nav .col:not(.contact-us){
+    flex: 20%;
+}
+.contact-us p:nth-of-type(3){
+    padding-left: 7rem;
+    text-indent: -7rem;
+}
+
+/* 关注我们 */
+#footer .footer-nav .contact-us .social{
+    
+}
+
+#footer .footer-nav .contact-us .social a{
+    background-color: #333;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    text-align: center;
+    transition: .3s;
+}
+#footer .footer-nav .contact-us .social a i{
+    color: #ccc;
+    transition: .3s;
+}
+#footer .footer-nav .contact-us .social a:nth-child(2):hover{
+    background-color: red;
+}
+#footer .footer-nav .contact-us .social a:nth-child(2):hover i{color:var(--white);}
+
+#footer .footer-nav .contact-us .social a:nth-child(3):hover{
+    background-color: var(--primary-color);
+}
+#footer .footer-nav .contact-us .social a:nth-child(3):hover i{color:var(--white);}
+
+#footer .footer-nav .contact-us .social a:nth-child(4):hover{
+    background-color: chartreuse;
+}
+#footer .footer-nav .contact-us .social a:nth-child(4):hover i{color:var(--white);}
+
+#footer .footer-nav .contact-us .social a:nth-child(5):hover{
+    background-color: darkorange;
+}
+#footer .footer-nav .contact-us .social a:nth-child(5):hover i{color:var(--white);}
+
+
+/* 设置二维码图片 */
+#footer .footer-nav .contact-us .social a:nth-child(4):hover div{
+    display: block;
+    transition: 1s;
+}
+#footer .footer-nav .contact-us .social a:nth-child(4) div{
+    display: none;
+}
+#footer img{
+    width: 100px;
+}
+#footer .footer-nav .contact-us .social a:nth-child(4){
+    position: relative;
+}
+#footer .footer-nav .contact-us .social a img{
+    position: absolute;
+    max-width: 1000px;
+    width: 100px;
+    height: 100px;
+    top: -120px;
+    left: -30px;
+    z-index: 9;
+}
+#footer .footer-nav .contact-us .social a:nth-child(4) div::after{
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    display: block;
+    transform:rotate(45deg);
+    background-color: var(--white);
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    z-index: 1;
+}
+/* 图片透明 */
+#footer .serve li img{
+    opacity: .5;
+}
+#footer .serve li a:hover img{
+    opacity: 1;
+}
+
+
+/********* #footer结束 **********/
+
+/* 清除 */
+aside{
+    display: none;
+}
+.feedback{
+    display: none;
+}
+footer{
+    display: none;
+}
+
+
+/********* 边栏导航.feedback ***********/
+.feedback{
+    width: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 200px;
+}
+.feedback i{
+    font-size: 20px;
+}
+.feedback li{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 5px;
+    border: 2px solid #888;
+}
+
+.tab-container nav{
+    display: flex;
+    margin-left: -20px;
+    line-height: 40px;
+    justify-content: space-around;
+}
+.bt2{
+    display: none;
+}
+.bt3{
+    display: none;
+}
+.bt1 {
+    display: flex;
+}
+.bt1 div ,.bt2 div ,.bt3 div{
+    flex: 50%;
+}
+.bt1 p ,.bt2 p ,.bt3 p{
+    flex: 50%;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+.tab-container{
+    display: none;
+    position: absolute;
+    background-color: var(--black-100);
+}
+.tab-container{
+    width: 250px;
+    left: -260px;
+    top: 0;
+    padding-bottom: 10px;
+}
+.tab-container .tab{
+    margin-top: 20px;
+}
+
+.tab1{
+    display: none;
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    left: -100px;
+    bottom: 60px;
+    background-color: var(--black-100);
+}
+.tab2{
+    display: none;
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    left: -100px;
+    bottom: 0;
+    background-color: var(--black-100);
+}
+.feedback li:nth-child(1):hover .tab-container{
+    display: block;
+}
+.feedback li:nth-child(2):hover .tab1{
+    display: block;
+}
+.feedback li:nth-child(3):hover .tab2{
+    display: block;
+}
+
 
 /*********#576***********/
 @media screen and (min-width:576px){
@@ -238,6 +481,16 @@ p{
         display: none;
     }
         /*头条结束  */
+
+    aside{
+        display: none;
+    }
+    .feedback{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
 }
 
 /********* 768 ***********/
@@ -342,6 +595,16 @@ p{
         height: 60px;
         line-height: 60px;
     }
+
+    aside{
+        display: none;
+    }
+    .feedback{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
 }
 /********* 992 ***********/
 @media screen and (min-width:992px){
@@ -367,12 +630,25 @@ p{
         height: 60px;
         line-height: 60px;
     }
+
+    aside{
+        display: block;
+    }
+    .feedback{
+        display: block;
+    }
+    footer{
+        display: block;
+    }
+
 }
 /********* 1200 ***********/
 @media screen and (min-width:120px){
     .container{
         max-width: 1130px;
     }
+    
+    
 }
 /********* 1400 ***********/
 @media screen and (min-width:1400px){
@@ -380,4 +656,15 @@ p{
         height: 60px;
         line-height: 60px;
     }
+    aside{
+        display: block;
+    }
+    .feedback{
+        display: block;
+    }
+    footer{
+        display: block;
+        position: relative;
+    }
+    
 }

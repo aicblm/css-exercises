@@ -1,3 +1,13 @@
+@font-face {
+    /* font-family:描述符,用于描述向系统字体列表中添加新字体 */
+    font-family: "阿里妈妈数黑体 Bold";
+    font-weight: 700;
+    /* url：描述符,描述自定义字体文件的位置 */
+    src: url("//at.alicdn.com/wf/webfont/zPg6oPauDKDj/tUb9Id_gQLeAcOdX9RoJu.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/zPg6oPauDKDj/GpqOQD5fXXFsHF-yMB6t9.woff") format("woff");
+    font-display: swap;
+  }
+
 /* Box sizing rules */
 *,
 *::before,
@@ -207,6 +217,7 @@ header .logo i{
 header .logo span{
     color: var(--gray-800);
     font-size: 1.5rem;
+    font-family: "阿里妈妈数黑体 Bold";
  }
 /* ***************登录*************** */
 /* main{
